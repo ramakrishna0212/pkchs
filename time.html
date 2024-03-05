@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <title>PKCHS</title>
+    <style>
+        * {
+            font-family: system-ui;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        body {
+            background-image: url("https://e0.pxfuel.com/wallpapers/497/150/desktop-wallpaper-hopped-the-original-background-if-you-want-to-use-whatsapp-dark-mode-go-to-settings-chats-background-and-use-this-r-whatsapp.jpg");
+            background-color: black;
+            background-size: 30%;
+            color: white;
+        }
+        .hero-content p {
+            top: -4%;
+            left: -1%;
+            font-size: 27px;
+            background-color: #202020;
+            width: 98%;
+            padding: 15px 52px;
+            border: solid 1px #0000007d;
+        }
+
+        .hero-content a {
+            color: rgb(255, 255, 255);
+            text-align: left;
+            top: 19px;
+            font-size: 16px;
+            left: 93%;
+        }
+        .menubar {
+            float: left;
+            padding: 63px;
+            width: 15%;
+            left: -1%;
+            top: 1%;
+            height: 85%;
+            border: solid 1px #000000;
+            z-index: -1;
+            position: fixed;
+            background: #202020;
+        }
+
+        .menubar a {
+            line-height: 72px;
+        }
+
+        .menubar a:hover {
+            background: #333333;
+            padding: 18px 100px 19px 20px;
+            position: relative;
+            left: -20px;
+            border-radius: 12px;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        h6{
+            font-size: 40px;
+            padding-top: 149%;
+        }
+        h5{
+            font-size: 20px;
+            background-color: #008669;
+            padding: 23px 1px;
+            border: solid 1px #000000;
+            border-radius: 20px;
+        }
+        .timings{
+            padding-bottom: 25px;
+            background-color: #333333;
+            border-radius: 26px;
+        }
+        p{
+            color: #a7a7a7;
+        }
+        input{
+            color: white;
+            border: none;
+            outline: none;
+            background: rgb(51 51 51);
+            padding: 14px 13px;
+            font-size: medium;
+            border-radius: 17px;
+            margin-top: 11%;
+        }
+        button{
+            margin-left: -8%;
+            background: none;
+            margin-top: -7.5%;
+            border: none;
+        }
+        .container{
+            position: absolute;
+            left: 51%;
+            top: -118%;
+            text-align: center;
+            z-index: -1;
+            padding-top: 32%;
+            padding-bottom: 10%;
+        }
+        
+        .header-wrapper {
+            max-width: fit-content;
+            position: relative;
+        }
+        .scroll{
+            padding-left: 96%;
+            font-size: 20px;
+            margin-top: 53%;
+            position: fixed;
+        }
+        .dropdowns {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: #005c4b;
+            color: white;
+            padding: 16px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            left: -45%;
+            position: fixed;
+        }
+        @media screen and (max-width: 760px) {
+            .hero-content p{
+                position: fixed;
+                left: 1%;
+            }
+            .hero-content a{
+                position: fixed;
+                left: 84%;
+                font-size: 13px;
+                top: 21px;
+            }
+            .menubar{
+                display: none;
+            }
+            .logo{
+                position: fixed;
+                left: 39%;
+                top: 84%;
+                width: 48%;
+            }
+            .dropbtn {
+                left: 9%;
+                position: fixed;
+                top: 5%;
+            }
+            .scroll{
+                display: none;
+            }
+            input{
+                color: white;
+                border: solid 1px black;
+                outline: none;
+                background: rgb(51 51 51);
+                padding: 18px 64px;
+                margin-top: 36.5%;
+                position: fixed;
+                left: 16%;
+                width: 39%;
+            }
+            h6{
+                margin-bottom: -4%;
+            }
+            .container{
+                text-align: center;
+                position: absolute;
+                left: 1%;
+                z-index: -1;
+                padding: 364px 27px;
+            }
+            i{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-content">
+        <p style="position: fixed;" >Pkchs</p>
+        <a href="login.html" target="_blank" style="position: fixed;">Logout</a>
+    </div>
+    <div class="dropdowns">
+        <a href="home.html"><button id="menuBtn" class="dropbtn"><i class="fa-solid fa-bars"></i></button></a>
+    </div>
+    <header id="main-header">
+        <div class="header-wrapper">
+            <div class="menubar">
+                <a href="home.html">Home page</a><br>
+                <a href="note.html">Note pad</a><br>
+                <a href="time.html">Time table</a><br>
+                <a href="mess.html">Mess menu</a><br>
+                <a href="main.html">Main sites</a><br>
+            </div>
+        </div>
+    </header>
+
+    <section id="time"> 
+        <div class="container">
+            <h6>TIME TABLE</h6><br>
+            <div class="timings">
+                <p><h5>Monday</h5></p>
+                <p>09:00 am - 11:00 am - <br>ISES (S606)</p>
+                <p>11:01 am - 12:00 pm - <br>OE</P>
+                <p>03:31 pm - 05:30 pm - <br>Software Engineering(W402)</P>
+            </div>
+
+            <div class="timings">
+                <P><h5>Tuesday</h5></P>
+                <p>09:00 am - 11:00 am - <br>APDS LAB( W403 ) / ML( W208 )</p>
+                <p>11:01 am - 12:00 pm - <br>Software Engineering(W402)</p>
+                <p>01:01 pm - 02:00 pm - <br>ISES (S302)</p>
+                <p>02:01 pm - 04:00 pm - <br>OE </p>
+            </div>
+            
+            <div class="timings">
+                <P><h5>Wednesday</h5></P>
+                <p>09:00 am - 11:00 am - <br>Software Engineering Lab (W102)</p>
+                <p>11:01 am - 12:00 pm - <br>OE</p>
+                <p>02:01 pm - 03:30 pm - <br>Cloud computing (W502)</p>
+                <p>03:01 pm - 05:00 pm - APDS( W403 ) /  ML LAB( W016 )</p>
+            </div>
+            <div class="timings">
+                <P><h5>Thursday</h5></P>
+                <p>09:00 am - 10:30 am - <br>APDS( (S607) ) /  ML LAB( W208 )</p>
+                <p>10:30 am - 12:00 pm - <br>Cloud computing (W502)</p>
+                <p>02:01 pm - 04:00 pm - <br>OE</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="scroll">
+        <a href="#main-header"><img src="https://i.pinimg.com/474x/24/34/d1/2434d144e3962cbe0bdbeb7d2afab48e.jpg" alt="" width="60%"></a>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+</body>
+</html>
